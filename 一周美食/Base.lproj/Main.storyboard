@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CVX-EU-07J">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstVC-->
+        <scene sceneID="HsT-t9-u3s">
+            <objects>
+                <viewController id="ca1-kV-ISe" customClass="FirstVC" customModule="一周美食" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mav-ld-xcB"/>
+                        <viewControllerLayoutGuide type="bottom" id="4QZ-M7-Pvi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JjG-um-b70">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gmV-su-cgJ">
+                        <nil key="title"/>
+                        <leftBarButtonItems>
+                            <barButtonItem style="plain" id="hbO-zg-794">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="umt-Kb-xgW">
+                                    <rect key="frame" x="16" y="5" width="37" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="广州"/>
+                                    <state key="highlighted" image="icon_arrow_green"/>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="arY-NI-5x5">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4D-56-xpM">
+                                    <rect key="frame" x="61" y="10" width="208" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="输入商家、品类、商圈" image="icon_navigationItem_search">
+                                        <color key="titleColor" red="0.24466214010000001" green="0.24466214010000001" blue="0.24466214010000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="search" destination="ca1-kV-ISe" eventType="touchUpInside" id="cvD-ZN-ENf"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem style="plain" id="sbm-bn-wkB">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kn6-61-nuF">
+                                    <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="icon_navigationItem_message_white"/>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="L9w-7A-kqt">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yKc-hl-hxT">
+                                    <rect key="frame" x="249" y="10" width="78" height="24"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="icon_navigationItem_scan_white"/>
+                                    <connections>
+                                        <action selector="scan:" destination="ca1-kV-ISe" eventType="touchUpInside" id="pfs-yP-HJ0"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cityBtn" destination="umt-Kb-xgW" id="7Fz-Uk-rax"/>
+                        <outlet property="messageBtn" destination="kn6-61-nuF" id="jof-cY-frp"/>
+                        <outlet property="scanBtn" destination="yKc-hl-hxT" id="xdx-Ym-gPP"/>
+                        <outlet property="searchBtn" destination="m4D-56-xpM" id="Hx9-LW-fKO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xH-Cx-WCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="-84"/>
+        </scene>
+        <!--Scan PopVC-->
+        <scene sceneID="hs9-Vh-nMZ">
+            <objects>
+                <viewController storyboardIdentifier="ScanPopVC" id="GLw-9b-gua" customClass="ScanPopVC" customModule="一周美食" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lCr-5p-mDW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ieI-Ig-oKV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L9i-Ci-ofQ">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="84"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAq-kz-V79">
+                                <frame key="frameInset" minX="35" minY="9" width="80" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="扫一扫" image="icon_navigationItem_scan_white"/>
+                                <state key="highlighted" image="icon_navigationItem_scan_highlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-TO-Ga6">
+                                <frame key="frameInset" minY="43" width="150" height="41"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="付款码" image="icon_navigationItem_scan_white"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUL-JU-mQm">
+                                <frame key="frameInset" minX="10" minY="41" width="130" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="150" height="84"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="150" height="84"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3L-Xb-FRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189" y="-271"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Deb-2z-50R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t2E-Pr-RWF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SET-GV-7DE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mwA-b1-KhY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.12549019607843137" green="0.71372549019607845" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ca1-kV-ISe" kind="relationship" relationship="rootViewController" id="P9Q-db-7gg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYi-2A-Gr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="-52"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D4c-iS-iRb">
+            <objects>
+                <viewController id="f31-NU-YQh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXC-pr-IXV"/>
+                        <viewControllerLayoutGuide type="bottom" id="kct-3N-9rW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOP-Gn-QCe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0YE-fA-BIM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMA-Pt-ORx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="627"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MGx-UT-iDH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CVX-EU-07J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="h5y-i2-puT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="t2E-Pr-RWF" kind="relationship" relationship="viewControllers" id="wSs-OK-eie"/>
+                        <segue destination="9bP-mM-CYa" kind="relationship" relationship="viewControllers" id="q8w-EG-MJs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQh-dZ-w31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.90625" y="-52.1484375"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="P3P-OI-NOD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9bP-mM-CYa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="eiL-hB-CuD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3xV-lQ-QBQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f31-NU-YQh" kind="relationship" relationship="rootViewController" id="IcY-1d-8W8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xdb-Jq-Xmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="627"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_arrow_green" width="12" height="6"/>
+        <image name="icon_navigationItem_message_white" width="24" height="24"/>
+        <image name="icon_navigationItem_scan_highlighted" width="24" height="24"/>
+        <image name="icon_navigationItem_scan_white" width="24" height="24"/>
+        <image name="icon_navigationItem_search" width="24" height="24"/>
+    </resources>
+</document>
