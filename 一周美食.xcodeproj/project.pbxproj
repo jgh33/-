@@ -13,6 +13,7 @@
 		D51090FE1D41AEBE00535233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51090FD1D41AEBE00535233 /* Assets.xcassets */; };
 		D51091011D41AEBE00535233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51090FF1D41AEBE00535233 /* LaunchScreen.storyboard */; };
 		D515CF201D42346200CF8DDD /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515CF1F1D42346200CF8DDD /* FirstVC.swift */; };
+		D55D5E911D4308080025AF85 /* FirstScrollV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D5E901D4308080025AF85 /* FirstScrollV.swift */; };
 		D58AA00D1D42603500814748 /* ScanPopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58AA00C1D42603500814748 /* ScanPopVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		D51091001D41AEBE00535233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D51091021D41AEBE00535233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D515CF1F1D42346200CF8DDD /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		D55D5E901D4308080025AF85 /* FirstScrollV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScrollV.swift; sourceTree = "<group>"; };
 		D58AA00C1D42603500814748 /* ScanPopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanPopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,13 +63,22 @@
 				D51090F61D41AEBE00535233 /* AppDelegate.swift */,
 				D51090F81D41AEBE00535233 /* ViewController.swift */,
 				D51090FA1D41AEBE00535233 /* Main.storyboard */,
-				D515CF1F1D42346200CF8DDD /* FirstVC.swift */,
-				D58AA00C1D42603500814748 /* ScanPopVC.swift */,
+				D55D5E921D4308230025AF85 /* First */,
 				D51090FD1D41AEBE00535233 /* Assets.xcassets */,
 				D51090FF1D41AEBE00535233 /* LaunchScreen.storyboard */,
 				D51091021D41AEBE00535233 /* Info.plist */,
 			);
 			path = "一周美食";
+			sourceTree = "<group>";
+		};
+		D55D5E921D4308230025AF85 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				D515CF1F1D42346200CF8DDD /* FirstVC.swift */,
+				D55D5E901D4308080025AF85 /* FirstScrollV.swift */,
+				D58AA00C1D42603500814748 /* ScanPopVC.swift */,
+			);
+			name = First;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				D515CF201D42346200CF8DDD /* FirstVC.swift in Sources */,
 				D51090F71D41AEBE00535233 /* AppDelegate.swift in Sources */,
 				D58AA00D1D42603500814748 /* ScanPopVC.swift in Sources */,
+				D55D5E911D4308080025AF85 /* FirstScrollV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

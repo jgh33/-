@@ -18,6 +18,12 @@
                     <view key="view" contentMode="scaleToFill" id="JjG-um-b70">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYg-WA-2sG" customClass="FirstScrollV" customModule="一周美食" customModuleProvider="target">
+                                <frame key="frameInset" minY="64" width="375" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
@@ -70,6 +76,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="FirstScrollV" destination="cYg-WA-2sG" id="3qI-KK-ot2"/>
                         <outlet property="cityBtn" destination="umt-Kb-xgW" id="7Fz-Uk-rax"/>
                         <outlet property="messageBtn" destination="kn6-61-nuF" id="jof-cY-frp"/>
                         <outlet property="scanBtn" destination="yKc-hl-hxT" id="xdx-Ym-gPP"/>
@@ -78,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xH-Cx-WCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569" y="-84"/>
+            <point key="canvasLocation" x="1568.8" y="-84.107946026986511"/>
         </scene>
         <!--Scan PopVC-->
         <scene sceneID="hs9-Vh-nMZ">
