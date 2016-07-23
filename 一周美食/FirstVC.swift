@@ -32,7 +32,7 @@ class FirstVC: UIViewController, UIPopoverPresentationControllerDelegate {
         let width1 = self.cityBtn.frame.width
         let width2 = self.scanBtn.frame.width
         let width3 = self.messageBtn.frame.width
-        self.searchBtn.frame.size.width = UIScreen.main().bounds.size.width - width1 - width2 - width3 - 50
+        self.searchBtn.frame.size.width = UIScreen.main().bounds.size.width - width1 - width2 - width3 - 55
     }
     
     
@@ -56,6 +56,8 @@ class FirstVC: UIViewController, UIPopoverPresentationControllerDelegate {
         pop.popoverPresentationController?.sourceRect = sender.bounds
         pop.preferredContentSize = CGSize(width: 150, height: 84)
         pop.popoverPresentationController?.permittedArrowDirections = .up
+        
+//        pop.view.backgroundColor = UIColor.darkGray()
         self.present(pop, animated: true, completion: nil)
 
     }

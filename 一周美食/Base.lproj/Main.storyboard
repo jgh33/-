@@ -42,9 +42,9 @@
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4D-56-xpM">
                                     <rect key="frame" x="61" y="10" width="208" height="24"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <inset key="titleEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="输入商家、品类、商圈" image="icon_navigationItem_search">
                                         <color key="titleColor" red="0.24466214010000001" green="0.24466214010000001" blue="0.24466214010000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
@@ -57,14 +57,14 @@
                         <rightBarButtonItems>
                             <barButtonItem style="plain" id="sbm-bn-wkB">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kn6-61-nuF">
-                                    <rect key="frame" x="335" y="10" width="24" height="24"/>
+                                    <rect key="frame" x="280" y="10" width="24" height="24"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="icon_navigationItem_message_white"/>
                                 </button>
                             </barButtonItem>
                             <barButtonItem style="plain" id="L9w-7A-kqt">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yKc-hl-hxT">
-                                    <rect key="frame" x="249" y="10" width="78" height="24"/>
+                                    <rect key="frame" x="248" y="10" width="24" height="24"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="icon_navigationItem_scan_white"/>
                                     <connections>
